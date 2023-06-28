@@ -1,0 +1,16 @@
+button {
+    padding: 6px 14px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    background-color: #121212;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    border-radius: 0px;
+}

@@ -1,13 +1,14 @@
 import React from 'react'
 import {Logo} from "../../assets/svgs"
 import {Button} from "../../components"
+import "./styles/Navbar.css"
 
 const Navbar = () => {
   return (
     <div className='landing-nav-main'>
         <div className='landing-nav-inner'>
             <div className='nav-logo'>
-                <Logo />
+                <Logo className='logo'/>
             </div>
             <div className='navbar-menus'>
                 <ul>
@@ -19,7 +20,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className='btn-nav-main'>
-                <Button />
+                <p>Log in</p>
+                <Button text='Get Portfol Free'/>
             </div>  
         </div>
     </div>

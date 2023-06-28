@@ -1,0 +1,46 @@
+.nav-landing-container {
+    padding: 10px 20px;
+}
+
+.main-landing-dislay {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header-text-cnt {
+    width: 67%;
+    margin-top: 40px;
+}
+
+.p-tag-header-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-tag-header {
+    width: 60%;
+}
+
+.header-text-cnt h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    font-weight: 800;
+}
+
+.header-text-cnt p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.svg-arrow-right {
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+    fill: #fff;
+}

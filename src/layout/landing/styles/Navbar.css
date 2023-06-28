@@ -1,0 +1,39 @@
+.logo {
+    width: 170px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.landing-nav-main {
+    padding: 5px;
+}
+
+.landing-nav-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-nav-main {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menus {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menus ul {
+    display: flex;
+}
+
+.navbar-menus ul li {
+    list-style: none;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.btn-nav-main p {
+    margin-right: 30px;
+    cursor: pointer;
+}

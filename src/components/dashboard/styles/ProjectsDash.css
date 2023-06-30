@@ -1,0 +1,64 @@
+.projects-dash-main {
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+thead {
+    border-bottom: 1px solid grey;
+}
+
+th, td {
+    padding: 10px 15px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    border-bottom: 1px solid rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: rgb(189, 189, 189);
+}
+
+.table-header-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.col-2-table-hs {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-2-table-hs input {
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    outline: none;
+}
+
+.add-more-projects-pop-up {
+    width: 55%;
+    background-color: #dbdbdb;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}

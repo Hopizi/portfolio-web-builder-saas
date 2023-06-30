@@ -1,0 +1,11 @@
+.socials-main-container {
+    width: 70%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.socials-btn-container {
+    display: flex;
+    margin-top: 20px;
+}

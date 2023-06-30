@@ -1,0 +1,71 @@
+.on-boarding-main-page {
+    height: 100vh;
+    position: relative;
+}
+
+.on-boarding-main-inner {
+    width: 80%;
+    height: 80%;
+}
+
+.onboarding-header h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.logo-container-ob {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.btn-container-ob {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+.user-information-section {
+    padding: 5px 80px;
+}
+
+.on-board-progress-bar {
+    display: flex;
+    
+    justify-content: space-between;
+    width: 50%;
+    position: relative;
+}
+
+.on-board-progress-bar-outer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-line {
+    position: absolute;
+    border: 1px solid grey;
+    width: 99%;
+    top: 35%;
+    background-color: grey;
+}
+
+.circle-cont {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.circle-cont p {
+    margin: 0;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
+
+.btn-container-ob div p {
+    margin: 0;
+}

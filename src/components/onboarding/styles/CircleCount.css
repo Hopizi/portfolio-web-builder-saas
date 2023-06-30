@@ -1,0 +1,14 @@
+.circle {
+    width: fit-content;
+    border-radius: 50%;
+    border: 2px solid grey;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.circle p {
+    margin: 0;
+    padding: 10px 16px;
+    color: grey;
+    font-weight: 800;
+}

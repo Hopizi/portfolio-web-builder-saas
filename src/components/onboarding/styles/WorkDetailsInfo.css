@@ -1,0 +1,36 @@
+.work-details-main-container {
+    width: 70%;
+}
+
+.work-projects-section div {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+}
+
+.text-area {
+    height: 50px;
+}
+
+.project-image label {
+    margin-bottom: 10px;
+}
+
+.resume-upload-section p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.add-more-project {
+    display: flex;
+    justify-content: center;
+}
+
+.add-section-btn {
+    border: 1px solid gray;
+    padding: 10px 20px;
+}
+
+.add-section-btn p {
+    margin: 0;
+}

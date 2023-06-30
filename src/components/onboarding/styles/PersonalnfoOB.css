@@ -1,0 +1,25 @@
+.personal-info-ob {
+    
+}
+
+.personal-forms-1 {
+    display: flex;
+    flex-direction: column; 
+    width: 70%;
+    margin: 20px;
+}
+
+.personal-forms-1 label {
+    font-size: 15px;
+}
+
+.on-boarding-input {
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    outline: none;
+}
+
+.on-boarding-text-area {
+    height: 100px;
+}

@@ -15,6 +15,10 @@
     flex: 1;
 }
 
+.login-block {
+    width: 30%;
+}
+
 .login-block h1 {
     text-align: center;
     font-size: 50px;
@@ -77,4 +81,11 @@
 .login-forgot-password p {
     font-size: 16px;
     color: grey;
+    cursor: pointer;
+}
+
+.login-forms {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
 }

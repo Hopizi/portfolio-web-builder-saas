@@ -11,6 +11,9 @@ import PersonalDetailsDash from "./dashboard/PersonalDetailsDash";
 import InstitustionForm from "./dashboard/InstitustionForm";
 import Work from "./dashboard/Work";
 import Socials from "./dashboard/Socials";
+import Settings from "./dashboard/Settings";
+import AddedInfo from "./dashboard/AddedInfo";
+import SkillsCert from "./dashboard/SkillsCert";
 
 export {
     Button,
@@ -25,5 +28,8 @@ export {
     PersonalDetailsDash,
     InstitustionForm,
     Work,
-    Socials
+    Socials,
+    Settings,
+    AddedInfo,
+    SkillsCert
 }

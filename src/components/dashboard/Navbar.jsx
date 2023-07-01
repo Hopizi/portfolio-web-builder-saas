@@ -12,6 +12,8 @@ const Navbar = ({clickedBar}) => {
         return "Projects";
       case "socials":
         return "Socials";
+      case "settings":
+        return "Settings";
       default:
         return null;
     }

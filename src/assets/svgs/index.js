@@ -6,6 +6,7 @@ import {ReactComponent as Notifications} from "./notifications.svg"
 import {ReactComponent as Twitter} from "./twitter.svg"
 import {ReactComponent as Linkedln} from "./linkedin.svg"
 import {ReactComponent as Github} from "./github.svg"
+import {ReactComponent as Add} from "./add.svg"
 
 export {
     Logo,
@@ -15,5 +16,6 @@ export {
     Notifications,
     Twitter,
     Linkedln,
-    Github
+    Github,
+    Add
 }

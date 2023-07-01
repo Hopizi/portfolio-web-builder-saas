@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./styles/Dashboard.css"
-import { Navbar, Sidebar, PersonalnfoOB,  WorkDetailsInfo, SocialsInfo, Button, ProjectsDash, PersonalDetailsDash, Socials} from '../../components'
+import { Navbar, Sidebar, PersonalnfoOB,  WorkDetailsInfo, SocialsInfo, Button, ProjectsDash, PersonalDetailsDash, Socials, Settings} from '../../components'
 
 const Dashboard = () => {
 
@@ -14,6 +14,8 @@ const Dashboard = () => {
           return <ProjectsDash />;
         case "socials":
           return <Socials />;
+        case "settings":
+            return <Settings />;
         default:
           return null;
       }
@@ -25,7 +27,7 @@ const Dashboard = () => {
       <div className="dashboard-inner">
         <div className='col-1-dashboard'>
           <div className="sidebar-container">
-            <Sidebar setClickedBar={setClickedBar}/>
+            <Sidebar setClickedBar={setClickedBar} clickedbar={clickedbar}/>
           </div>
         </div>
         <div className='col-2-dashboard'>

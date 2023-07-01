@@ -21,3 +21,7 @@ a {
   height: 25px;
 }
 
+button:disabled {
+  opacity: 0.35;
+}
+

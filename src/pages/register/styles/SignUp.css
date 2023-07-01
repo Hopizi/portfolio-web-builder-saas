@@ -12,20 +12,23 @@
     flex: 1;
 }
 
+.sign-up-block {
+    width: 30%;
+}
+
 .sign-up-block h1 {
     font-size: 55px;
     text-align: center;
     margin: 0;
-    margin-bottom: 30px;
 }
 
 .sign-up-form-action {
-    margin: 30px 0;
+    margin: 10px 0;
     border-bottom: 1px solid grey;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
-.input-fields-sign-up {
+.input-fields-sign-up div {
     display: flex;
     flex-direction: column;
 }
@@ -40,9 +43,23 @@
     font-size: 15px;
     font-family: 'Manrope', sans-serif;
     outline: none;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .input-fields-sign-up input:focus {
     border: 1px solid grey;
+}
+
+.input-error {
+    border: 1px solid red;
+}
+
+.error-text {
+    color: red;
+    margin: 0;
+    font-size: 12px;
+}
+
+.sign-up-btn {
+    margin-top: 5px;
 }

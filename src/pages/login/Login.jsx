@@ -2,10 +2,26 @@ import React, { useState } from 'react'
 import "./styles/Login.css"
 import { Logo, Facebook, Google } from '../../assets/svgs';
 import { Button } from '../../components';
+import { useFormik } from "formik";
+import { signUpSchema } from "../../services/auth";
 
 const Login = () => {
 
-const [btnClicked, setBtnClicked] = useState(true);
+  const {
+    values,
+    errors,
+    touched,
+    isSubmitting,
+    handleBlur,
+    handleChange,
+    handleSubmit,
+  } = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: signUpSchema,
+  });
     
   return (
     <div className="login-main-container">
@@ -25,28 +41,45 @@ const [btnClicked, setBtnClicked] = useState(true);
               <p>Continue With Facebook</p>
             </div>
           </div>
-          <div className="login-forms-action">
+          <form className="login-forms-action">
             <div className="input-fields-label">
-              {btnClicked ? (
-                <React.Fragment>
-                  <label>Password</label>
-                  <input placeholder="Enter your password here..." />
-                </React.Fragment>
-              ) : (
-                <React.Fragment>
-                  <label>Email</label>
-                  <input placeholder="Enter your email adress here..." />
-                </React.Fragment>
-              )}
+              <div className="login-forms">
+                <label>Email</label>
+                <input
+                  value={values.email}
+                  onChange={handleChange}
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email adress here..."
+                  onBlur={handleBlur}
+                  className={errors.email && touched.email ? "input-error" : ""}
+                />
+                {errors.email && touched.email && (
+                  <p className="error-text">{errors.email}</p>
+                )}
+              </div>
+              <div className="login-forms">
+                <label>Password</label>
+                <input
+                  value={values.password}
+                  onChange={handleChange}
+                  id="password"
+                  type="password"
+                  placeholder="Enter your password here..."
+                  onBlur={handleBlur}
+                  className={
+                    errors.password && touched.password ? "input-error" : ""
+                  }
+                />
+                {errors.password && touched.password && (
+                  <p className="error-text">{errors.password}</p>
+                )}
+              </div>
             </div>
             <div className="btn-login-method">
-              {btnClicked ? (
-                <Button text="Log in" className="login-btn" />
-              ) : (
-                <Button text="Continue With Email" className="login-btn" />
-              )}
+              <Button text="Log in" className="login-btn" />
             </div>
-          </div>
+          </form>
           <div className="login-forgot-password">
             <p>Forgot Password?</p>
           </div>
